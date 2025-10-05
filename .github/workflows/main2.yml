@@ -9,12 +9,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v5.0.0
 
     - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
+      uses: actions/setup-python@v6.0.0
 
     - name: Install Bandit
       run: pip install bandit
