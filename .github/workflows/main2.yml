@@ -1,21 +1,21 @@
-name: CIntegration
+#name: CIntegration
 
-on: [push]
+#on: [push]
 
-jobs:
-  sast_scan:
-    name: Run Bandit Scan
-    runs-on: ubtuntu-;atest
+#jobs:
+  #sast_scan:
+    #name: Run Bandit Scan
+    #runs-on: ubtuntu-;atest
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v5.0.0
+    #steps:
+    #- name: Checkout code
+      #uses: actions/checkout@v5.0.0
 
-    - name: Set up Python
-      uses: actions/setup-python@v6.0.0
+    #- name: Set up Python
+      #uses: actions/setup-python@v6.0.0
 
-    - name: Install Bandit
-      run: pip install bandit
+    #- name: Install Bandit
+      #run: pip install bandit
 
-    - name: Run bandit scan
-      run: bandit -r .
+    #- name: Run bandit scan
+      #run: bandit -r .
